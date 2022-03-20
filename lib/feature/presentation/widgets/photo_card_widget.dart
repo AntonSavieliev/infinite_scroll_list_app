@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:like_button/like_button.dart';
 import 'package:infinite_scroll_list_app/common/app_colors.dart';
 import 'package:infinite_scroll_list_app/feature/domain/entities/photo_entity.dart';
 import 'package:infinite_scroll_list_app/feature/presentation/widgets/cache_image_widget.dart';
 import 'package:infinite_scroll_list_app/feature/presentation/widgets/image_dialog.dart';
+import 'package:like_button/like_button.dart';
 
 class PhotoCard extends StatelessWidget {
   final PhotoEntity photo;
@@ -50,7 +50,7 @@ class PhotoCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    '${photo.title} - ${photo.id}',
+                    '${photo.title}',
                     style: const TextStyle(
                       fontSize: 16,
                       color: Colors.white,
